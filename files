@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+# System Python on purpose: PyGObject comes from pacman, and a mise-managed python wouldn't have it.
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
+
+from filesapp.app import main
+
+sys.exit(main())
